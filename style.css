@@ -1,0 +1,268 @@
+html {
+    min-height: 100%;
+    width: 100%;
+    overflow: visible;
+    overflow-x: hidden;
+	font-family: 'Cuprum', sans-serif;
+}
+
+body {
+	margin: 0;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.clicker {
+	position: fixed;
+	width: 30%;
+	height: 100%;
+	display: inline-flex;
+	float: left;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	border-right-style: solid;
+	border-width: 0.75px;
+	border-color: black;
+	justify-content: center;
+	align-items: center;
+}
+
+	.resourses {
+		position: relative;
+		width: 85%;
+		height: 65%;
+		display: block;
+		background-color: none;
+	}
+
+	.resourses p {
+		width: auto;
+		height: auto;
+	}
+
+
+
+
+	#get-veg {
+		position: relative;
+		width: 90%;
+		height: auto;
+		min-height: 13%;
+		display: block;
+		font-size: 18px;
+	}
+
+	#veg {
+		position: relative;
+		width: 85%;
+		height: auto;
+		display: block;
+		font-size: 20px;
+	}
+
+	#veg-num {
+		position: relative;
+		font-weight: bold;
+		font-size: 30px;
+		display: inline;
+	}
+
+
+
+
+	#get-fruit {
+		position: relative;
+		width: 90%;
+		height: auto;
+		min-height: 13%;
+		display: block;
+		font-size: 18px;
+	}
+
+	#fruit {
+		position: relative;
+		width: 85%;
+		height: auto;
+		display: block;
+		font-size: 20px;
+	}
+
+	#fruit-num {
+		position: relative;
+		font-weight: bold;
+		font-size: 30px;
+		display: inline;
+	}
+
+
+
+
+	#get-berr {
+		position: relative;
+		width: 90%;
+		height: auto;
+		min-height: 13%;
+		display: block;
+		font-size: 18px;
+	}
+
+	#berr {
+		position: relative;
+		width: 85%;
+		height: auto;
+		display: block;
+		font-size: 20px;
+	}
+
+	#berr-num {
+		position: relative;
+		font-weight: bold;
+		font-size: 30px;
+		display: inline;
+	}
+
+
+
+
+.shop {
+	position: relative;
+	width: 63%;
+	height: auto;
+	min-height: 100%;
+	display: block;
+	float: left;
+	top: 0;
+	left: 30%;
+	right: 7%;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-width: 0.75px;
+	border-color: black;
+}
+
+	.banner {
+		position: relative;
+		width: 300px;
+		height: 75px;
+		display: block;
+		float: left;
+		top: 0;
+		left: 50%;
+		margin-left: -150px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: red;
+	}
+
+	.seller {
+		position: relative;
+		width: 48%;
+		height: auto;
+		min-height: 100%;
+		float: left;
+		top: 5px;
+		margin-right: 1%;
+	}
+
+		.trader {
+			position: relative;
+			width: 90%;
+			height: 100px;
+			display: inline;
+			float: left;
+			top: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+			background-color: #BBBBBB;
+		}
+
+			.trade {
+				position: relative;
+				width: 90%;
+				height: 60px;
+				display: inline;
+				float: left;
+				top: 10px;
+				left: 5%;
+				right: 5%;
+				font-size: 20px;
+				text-align: center;
+			}
+
+			.sell-buy {
+				position: relative;
+				width: 90%;
+				height: 24px;
+				display: inline;
+				float: left;
+				top: 3px;
+				bottom: 3px;
+				left: 5%;
+				right: 5%;
+				font-size: 19px;
+				text-align: center;
+				background-color: #CCCCCC;
+			}
+
+				#VillagerCent {}
+
+
+
+	.buyer {
+		position: relative;
+		width: 48%;
+		height: auto;
+		min-height: 100%;
+		float: right;
+		top: 5px;
+		margin-left: 1%;
+	}
+
+
+
+
+.info {
+	position: fixed;
+	width: 7%;
+	height: 100%;
+	display: inline;
+	float: right;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-left-style: solid;
+	border-width: 0.75px;
+	border-color: black;
+	text-align: center;
+}
+
+	#money {
+		position: relative;
+		font-weight: bold;
+		font-size: 20px;
+		display: inline;
+		color: #CCCC00;
+	}
+
+	#veg-num-r {
+		position: relative;
+		font-weight: bold;
+		font-size: 20px;
+		display: inline-block;
+	}
+
+	#fruit-num-r {
+		position: relative;
+		font-weight: bold;
+		font-size: 20px;
+		display: inline;
+	}
+
+	#berr-num-r {
+		position: relative;
+		font-weight: bold;
+		font-size: 20px;
+		display: inline;
+	}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Описание">
+	<meta name="keywords" content="Ключевые слова">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="white">
+	<link rel="stylesheet" href="reset.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>ClickerGame||Hello</title>
+</head>
+<body>
+	<div class="clicker">
+		<div class="resourses">
+			<button id="get-veg" onmousedown="get_veg()" align="center">Собрать овощи</button>
+			<br/>
+			<br/>
+			<button id="get-fruit" onmousedown="get_fruit()" align="center">Собрать фрукты</button>
+			<br/>
+			<br/>
+			<button id="get-berr" onmousedown="get_berr()" align="center">Собрать ягоды</button>
+			<br/>
+			<br/>
+			<div id="veg" align="center">Собрано овощей:&nbsp;<h2 id="veg-num" max>0</h2></div>
+			<br/>
+			<div id="fruit" align="center">Собрано фруктов:&nbsp;<h2 id="fruit-num">0</h2></div>
+			<br/>
+			<div id="berr" align="center">Собрано ягод:&nbsp;<h2 id="berr-num">0</h2></div>
+		</div>
+	</div>
+	<div class="shop">
+		<div class="banner" align="center"><h1 style="font-size: 63px">рынок</h1></div>
+		<div style="clear: both;"></div>
+		<div class="seller">
+			<p>
+				<div class="trader">
+					<div class="trade">овощи(x20) = монеты(x2)</div>
+					<button class="sell-buy" onclick="sellVeg()">продать</button>
+				</div>
+			</p>
+			<div style="clear: both"></div>
+			<p>
+				<div class="trader">
+					<div class="trade">фрукты(x20) = монеты(x2)</div>
+					<button class="sell-buy" onclick="sellFruit()">продать</button>
+				</div>
+			</p>
+			<div style="clear: both"></div>
+			<p>
+				<div class="trader">
+					<div class="trade">ягоды(x50) = монеты(x2)</div>
+					<button class="sell-buy" onclick="sellBerr()">продать</button>
+				</div>
+			</p>
+		</div>
+		<div class="buyer">
+			<p>
+				<div class="trader">
+					<div class="trade">монеты(x<span id="VillagerCent">20</span>) = крестьянин(x1)</div>
+					<button class="sell-buy" onclick="buyVillager()">купить</button>
+				</div>
+			</p>
+		</div>
+	</div>
+	<div class="info">
+		<br>
+		<h3 id="money">0</h3>
+		<br>
+		<br>
+		<h3 id="veg-num-r">0</h3>
+		<br>
+		<br>
+		<h3 id="fruit-num-r">0</h3>
+		<br>
+		<br>
+		<h3 id="berr-num-r">0</h3>
+		<br>
+		<br>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
