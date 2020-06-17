@@ -35,21 +35,21 @@
 		<div class="seller">
 			<p>
 				<div class="trader">
-					<div class="trade">овощи(x<input id="vegCount" type="number" value="20">) = монеты(x<span id="vegCountCent"></span>)</div>
+					<div class="trade">овощи(<img src="img/veg.png" width="20px" height="20px"><input id="vegCount" type="number" value="20">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="vegCountCent"></span>)</div>
 					<button class="sell-buy" onclick="sellVeg()">продать</button>
 				</div>
 			</p>
 			<div style="clear: both"></div>
 			<p>
 				<div class="trader">
-					<div class="trade">фрукты(x<input id="fruitCount" type="number" value="20">) = монеты(x<span id="fruitCountCent"></span>)</div>
+					<div class="trade">фрукты(<img src="img/fruit.png" width="20px" height="20px"><input id="fruitCount" type="number" value="20">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="fruitCountCent"></span>)</div>
 					<button class="sell-buy" onclick="sellFruit()">продать</button>
 				</div>
 			</p>
 			<div style="clear: both"></div>
 			<p>
 				<div class="trader">
-					<div class="trade">ягоды(x<input id="berrCount" type="number" value="50">) = монеты(x<span id="berrCountCent"></span>)</div>
+					<div class="trade">ягоды(<img src="img/berr.png" width="20px" height="20px"><input id="berrCount" type="number" value="50">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="berrCountCent"></span>)</div>
 					<button class="sell-buy" onclick="sellBerr()">продать</button>
 				</div>
 			</p>
@@ -57,7 +57,7 @@
 		<div class="buyer">
 			<p>
 				<div class="trader" style="float: right;">
-					<div class="trade">монеты(x<span id="VillagerCent"></span>) = крестьянин(x1)</div>
+					<div class="trade">монеты(<img src="img/money.png" width="20px" height="20px"><span id="VillagerCent"></span>) = крестьянин(<img src="img/villager.png" width="20px" height="20px">1)</div>
 					<button class="sell-buy" onclick="buyVillager()">купить</button>
 				</div>
 			</p>
@@ -66,6 +66,10 @@
 	<div class="info">
 		<br>
 		<img src="img/money.png" width="22px" height="22px">&nbsp;<h3 id="money"></h3>
+		<br>
+		<br>
+		<img src="img/villager.png" width="22px" height="22px">&nbsp;<h3 id="villager-num-r"></h3>
+		<br>
 		<br>
 		<br>
 		<img src="img/veg.png" width="22px" height="22px">&nbsp;<h3 id="veg-num-r"></h3>

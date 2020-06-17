@@ -327,3 +327,10 @@ body {
 		font-size: 20px;
 		display: inline;
 	}
+
+	#villager-num-r {
+		position: relative;
+		font-weight: bold;
+		font-size: 20px;
+		display: inline;
+	}

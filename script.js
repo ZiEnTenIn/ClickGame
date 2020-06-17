@@ -4,7 +4,7 @@
 
 
 
-	var money = 0;
+	var money = 10000;
 	document.getElementById('money').innerHTML = money.toFixed();
 
 
@@ -25,6 +25,7 @@
 	var timerVillager;
 	var villagerCent = 20;
 	document.getElementById('VillagerCent').innerHTML = villagerCent.toFixed();
+	document.getElementById('villager-num-r').innerHTML = villagerCount.toFixed();
 
 
 
@@ -167,11 +168,12 @@
   		if(money >= villagerCent) {
   			clearInterval(timerVillager);
     		villagerCount = villagerCount + 1;
+    		document.getElementById('villager-num-r').innerHTML = villagerCount.toFixed();
     		timerVillager = Villager(villagerCount);
     		money = money - villagerCent;
     		document.getElementById('money').innerHTML = money.toFixed();
     		villagerCent = villagerCent * 1.1;
-    		document.getElementById('VillagerCountCent').innerHTML = villagerCent.toFixed();
+    		document.getElementById('VillagerCent').innerHTML = villagerCent.toFixed();
 		}
 		else {
 			alert("У вас недостаточно монет...");
