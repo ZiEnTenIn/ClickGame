@@ -8,14 +8,26 @@
 
 
 	var money = 10000;
+	document.getElementById('money').innerHTML = money.toFixed();
 
-	var veg = 0;
+
+	var veg = 10;
+	document.getElementById('veg-num').innerHTML = veg.toFixed();
+	document.getElementById('veg-num-r').innerHTML = veg.toFixed();
+
 	var fruit = 0;
+	document.getElementById('fruit-num').innerHTML = fruit.toFixed();
+	document.getElementById('fruit-num-r').innerHTML = fruit.toFixed();
+
 	var berr = 0;
+	document.getElementById('berr-num').innerHTML = berr.toFixed();
+	document.getElementById('berr-num-r').innerHTML = berr.toFixed();
+
 
 	var villagerCount = 0;
 	var timerVillager;
 	var villagerCent = 20;
+	document.getElementById('VillagerCent').innerHTML = villagerCent.toFixed();
 
 
 

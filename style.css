@@ -128,14 +128,14 @@ body {
 
 .shop {
 	position: relative;
-	width: 63%;
+	width: 60%;
 	height: auto;
 	min-height: 100%;
 	display: block;
 	float: left;
 	top: 0;
 	left: 30%;
-	right: 7%;
+	right: 10%;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-width: 0.75px;
@@ -163,7 +163,7 @@ body {
 		min-height: 100%;
 		float: left;
 		top: 5px;
-		margin-right: 1%;
+		margin-left: 1%;
 	}
 
 		.trader {
@@ -172,7 +172,6 @@ body {
 			height: 100px;
 			display: inline;
 			float: left;
-			top: 10px;
 			margin-left: 10px;
 			margin-right: 10px;
 			background-color: #BBBBBB;
@@ -208,8 +207,6 @@ body {
 
 				#VillagerCent {}
 
-
-
 	.buyer {
 		position: relative;
 		width: 48%;
@@ -217,7 +214,7 @@ body {
 		min-height: 100%;
 		float: right;
 		top: 5px;
-		margin-left: 1%;
+		margin-right: 1%;
 	}
 
 
@@ -225,7 +222,7 @@ body {
 
 .info {
 	position: fixed;
-	width: 7%;
+	width: 10%;
 	height: 100%;
 	display: inline;
 	float: right;
@@ -245,6 +242,7 @@ body {
 		display: inline;
 		color: #CCCC00;
 	}
+
 
 	#veg-num-r {
 		position: relative;
