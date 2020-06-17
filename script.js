@@ -1,6 +1,3 @@
-	window.onload = function() {}
-
-
 	function getRandomInt(min, max) {
 		return Math.floor(Math.random() * (max - min)) + min;
 	}
@@ -11,7 +8,7 @@
 	document.getElementById('money').innerHTML = money.toFixed();
 
 
-	var veg = 10;
+	var veg = 0;
 	document.getElementById('veg-num').innerHTML = veg.toFixed();
 	document.getElementById('veg-num-r').innerHTML = veg.toFixed();
 
@@ -47,7 +44,38 @@
 	}
 
 
-	
+
+	function vegCountCent() {
+  		setInterval(() => {
+  			var vegCount = document.getElementById('vegCount').value;   	
+			var vegCountCent = ((Math.floor(vegCount/20)) * 2);
+
+			document.getElementById('vegCountCent').innerHTML = vegCountCent.toFixed();
+		}, 500);
+	}
+
+	function fruitCountCent() {
+  		setInterval(() => {
+  			var fruitCount = document.getElementById('fruitCount').value;   	
+			var fruitCountCent = ((Math.floor(fruitCount/20)) * 2);
+
+			document.getElementById('fruitCountCent').innerHTML = fruitCountCent.toFixed();
+		}, 500);
+	}
+
+	function berrCountCent() {
+  		setInterval(() => {
+  			var berrCount = document.getElementById('berrCount').value;   	
+			var berrCountCent = ((Math.floor(berrCount/50)) * 2);
+
+			document.getElementById('berrCountCent').innerHTML = berrCountCent.toFixed();
+		}, 500);
+	}
+
+
+	vegCountCent();
+	fruitCountCent();
+	berrCountCent();
 
 	function get_veg() {
 		veg = veg + getRandomInt(1, 3);
@@ -69,12 +97,21 @@
 
 
 	function sellVeg() {
-		if(veg >= 20) {
-			veg = veg - 20;
-			money = money + 2;
-			document.getElementById('money').innerHTML = money.toFixed();
-			document.getElementById('veg-num-r').innerHTML = veg.toFixed();
-			document.getElementById('veg-num').innerHTML = veg.toFixed();
+		var vegCount = document.getElementById('vegCount').value;
+		if(veg >= vegCount) {
+			if(vegCount < 20) {
+				alert('Минимальное количество овощей для продажи - 20 штук!');
+			}
+			else if(vegCount > 999) {
+				alert('Максимальное количество овощей для продажи - 999 штук!');
+			}
+			else {
+				veg = veg - vegCount;
+				money = money + ((Math.floor(vegCount/20)) * 2);
+				document.getElementById('money').innerHTML = money.toFixed();
+				document.getElementById('veg-num-r').innerHTML = veg.toFixed();
+				document.getElementById('veg-num').innerHTML = veg.toFixed();
+			}
 		}
 		else {
 			alert("У вас недостаточно овощей...");
@@ -82,12 +119,21 @@
 	}
 
 	function sellFruit() {
-		if(fruit >= 20) {
-			fruit = fruit - 20;
-			money = money + 2;
-			document.getElementById('money').innerHTML = money.toFixed();
-			document.getElementById('fruit-num-r').innerHTML = fruit.toFixed();
-			document.getElementById('fruit-num').innerHTML = fruit.toFixed();
+		var fruitCount = document.getElementById('fruitCount').value;
+		if(fruit >= fruitCount) {
+			if(fruitCount < 20) {
+				alert('Минимальное количество фруктов для продажи - 20 штук!');
+			}
+			else if(fruitCount > 999) {
+				alert('Максимальное количество фруктов для продажи - 999 штук!');
+			}
+			else {
+				fruit = fruit - fruitCount;
+				money = money + ((Math.floor(fruitCount/20)) * 2);
+				document.getElementById('money').innerHTML = money.toFixed();
+				document.getElementById('fruit-num-r').innerHTML = fruit.toFixed();
+				document.getElementById('fruit-num').innerHTML = fruit.toFixed();
+			}
 		}
 		else {
 			alert("У вас недостаточно фруктов...");
@@ -95,12 +141,21 @@
 	}
 
 	function sellBerr() {
-		if(berr >= 50) {
-			berr = berr - 50;
-			money = money + 2;
-			document.getElementById('money').innerHTML = money.toFixed();
-			document.getElementById('berr-num-r').innerHTML = berr.toFixed();
-			document.getElementById('berr-num').innerHTML = berr.toFixed();
+		var berrCount = document.getElementById('berrCount').value;
+		if(berr >= berrCount) {
+			if(berrCount < 50) {
+				alert('Минимальное количество ягод для продажи - 50 штук!');
+			}
+			else if(berrCount > 999) {
+				alert('Максимальное количество ягод для продажи - 999 штук!');
+			}
+			else {
+				berr = berr - berrCount;
+				money = money + ((Math.floor(berrCount/50)) * 2);
+				document.getElementById('money').innerHTML = money.toFixed();
+				document.getElementById('berr-num-r').innerHTML = berr.toFixed();
+				document.getElementById('berr-num').innerHTML = berr.toFixed();
+			}
 		}
 		else {
 			alert("У вас недостаточно ягод...");
@@ -116,7 +171,7 @@
     		money = money - villagerCent;
     		document.getElementById('money').innerHTML = money.toFixed();
     		villagerCent = villagerCent * 1.1;
-    		document.getElementById('VillagerCent').innerHTML = villagerCent.toFixed();
+    		document.getElementById('VillagerCountCent').innerHTML = villagerCent.toFixed();
 		}
 		else {
 			alert("У вас недостаточно монет...");

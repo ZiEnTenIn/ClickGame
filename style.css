@@ -190,6 +190,69 @@ body {
 				text-align: center;
 			}
 
+				#vegCount {
+					position: relative;
+					width: 45px;
+					height: 21px;
+					font-size: 20px;
+					font-weight: bold;
+					background-color: #EEEEEE;
+					border-radius: 5px;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+
+					#vegCount::-webkit-outer-spin-button,
+					#vegCount::-webkit-inner-spin-button {
+						display: none;
+						-webkit-appearance: none;
+						margin: 0;
+					}
+
+					#vegCountCent {}
+
+				#fruitCount {
+					position: relative;
+					width: 45px;
+					height: 21px;
+					font-size: 20px;
+					font-weight: bold;
+					background-color: #EEEEEE;
+					border-radius: 5px;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+
+					#fruitCount::-webkit-outer-spin-button,
+					#fruitCount::-webkit-inner-spin-button {
+						display: none;
+						-webkit-appearance: none;
+						margin: 0;
+					}
+
+					#fruitCountCent {}
+
+				#berrCount {
+					position: relative;
+					width: 45px;
+					height: 21px;
+					font-size: 20px;
+					font-weight: bold;
+					background-color: #EEEEEE;
+					border-radius: 5px;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+
+					#berrCount::-webkit-outer-spin-button,
+					#berrCount::-webkit-inner-spin-button {
+						display: none;
+						-webkit-appearance: none;
+						margin: 0;
+					}
+
+					#berrCountCent {}
+
 			.sell-buy {
 				position: relative;
 				width: 90%;
