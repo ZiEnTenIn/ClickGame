@@ -8,10 +8,10 @@
 	<meta name="theme-color" content="white">
 	<link rel="stylesheet" href="reset.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<title>ClickerGame||Hello</title>
+	<title>ClickerGame||Fields</title>
 </head>
 <body>
-	<div class="clicker">
+	<div class="clicker sticky">
 		<div class="resourses">
 			<button id="get-veg" onmousedown="get_veg()" align="center">Собрать овощи</button>
 			<br/>
@@ -22,43 +22,54 @@
 			<button id="get-berr" onmousedown="get_berr()" align="center">Собрать ягоды</button>
 			<br/>
 			<br/>
-			<div id="veg" align="center">Собрано овощей: <img src="img/veg.png" width="27px" height="27px">&nbsp;<h2 id="veg-num" max></h2></div>
-			<br/>
-			<div id="fruit" align="center">Собрано фруктов: <img src="img/fruit.png" width="27px" height="27px">&nbsp;<h2 id="fruit-num"></h2></div>
-			<br/>
-			<div id="berr" align="center">Собрано ягод: <img src="img/berr.png" width="27px" height="27px">&nbsp;<h2 id="berr-num"></h2></div>
+			<div class="items">
+				<div id="veg" align="center">Собрано овощей: <img src="img/veg.png" width="27px" height="27px">&nbsp;<h2 id="veg-num" max></h2></div>
+				<br/>
+				<div id="fruit" align="center">Собрано фруктов: <img src="img/fruit.png" width="27px" height="27px">&nbsp;<h2 id="fruit-num"></h2></div>
+				<br/>
+				<div id="berr" align="center">Собрано ягод: <img src="img/berr.png" width="27px" height="27px">&nbsp;<h2 id="berr-num"></h2></div>
+			</div>
 		</div>
 	</div>
 	<div class="shop">
-		<div class="banner" align="center"><h1 style="font-size: 63px">рынок</h1></div>
-		<div style="clear: both;"></div>
 		<div class="seller">
+			<p>
+				<h2 class="trade-title">Продать</h2>
+			</p>
+			<div style="clear: both"></div>
+			<br>
 			<p>
 				<div class="trader">
 					<div class="trade">овощи(<img src="img/veg.png" width="20px" height="20px"><input id="vegCount" type="number" value="20">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="vegCountCent"></span>)</div>
-					<button class="sell-buy" onclick="sellVeg()">продать</button>
+					<button class="sell-buy1" onclick="sellVeg()">продать</button>
 				</div>
 			</p>
 			<div style="clear: both"></div>
 			<p>
 				<div class="trader">
 					<div class="trade">фрукты(<img src="img/fruit.png" width="20px" height="20px"><input id="fruitCount" type="number" value="20">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="fruitCountCent"></span>)</div>
-					<button class="sell-buy" onclick="sellFruit()">продать</button>
+					<button class="sell-buy1" onclick="sellFruit()">продать</button>
 				</div>
 			</p>
 			<div style="clear: both"></div>
 			<p>
 				<div class="trader">
 					<div class="trade">ягоды(<img src="img/berr.png" width="20px" height="20px"><input id="berrCount" type="number" value="50">) = монеты(<img src="img/money.png" width="20px" height="20px"><span id="berrCountCent"></span>)</div>
-					<button class="sell-buy" onclick="sellBerr()">продать</button>
+					<button class="sell-buy1" onclick="sellBerr()">продать</button>
 				</div>
 			</p>
 		</div>
 		<div class="buyer">
 			<p>
+				<h2 class="trade-title">Купить</h2>
+			</p>
+			<div style="clear: both"></div>
+			<br>
+
+			<p>
 				<div class="trader" style="float: right;">
 					<div class="trade">монеты(<img src="img/money.png" width="20px" height="20px"><span id="VillagerCent"></span>) = крестьянин(<img src="img/villager.png" width="20px" height="20px">1)</div>
-					<button class="sell-buy" onclick="buyVillager()">купить</button>
+					<button class="sell-buy2" onclick="buyVillager()">купить</button>
 				</div>
 			</p>
 		</div>
