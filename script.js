@@ -4,7 +4,7 @@
 
 
 
-	var money = 0;
+	var money = 99999;
 	document.getElementById('money').innerHTML = money.toFixed();
 
 
